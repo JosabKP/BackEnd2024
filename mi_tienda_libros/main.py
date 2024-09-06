@@ -1,6 +1,6 @@
-from mi_tienda_libros.gestion_libros.inventario import agregar_libro, mostrar_inventario
-from mi_tienda_libros.gestion_libros.ventas import vender_libro, mostrar_total_ventas
-from mi_tienda_libros.utils import limpiar_pantalla
+from gestion_libros.inventario import agregar_libro, mostrar_inventario
+from gestion_libros.ventas import vender_libro, mostrar_total_ventas
+from utils import limpiar_pantalla
 
 def mostrar_menu():
     """Muestra el menú principal"""

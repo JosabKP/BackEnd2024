@@ -1,12 +1,12 @@
 ventas = 0
 from mi_tienda_libros.gestion_libros.inventario import inventario
-from mi_tienda_libros.gestion_libros.inventario import mostrar_inventario
 
 def vender_libro():
     """Vende un libro del inventario"""
     if not inventario:
         print("El inventario está vacío. No se pueden realizar ventas.")
         return
+    from mi_tienda_libros.gestion_libros.inventario import mostrar_inventario
     mostrar_inventario()
     try:
         eleccion = int(input("Ingrese el número del libro que desea vender: ")) - 1
